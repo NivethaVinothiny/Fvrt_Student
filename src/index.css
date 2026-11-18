@@ -1,0 +1,93 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: #f3f4f8;
+  color: #1f2430;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 16px 32px;
+  background: #3b3f8f;
+  color: #fff;
+}
+.brand { font-size: 1.25rem; }
+.nav-links { display: flex; gap: 8px; }
+.nav-links a {
+  color: #dfe1ff;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+.nav-links a:hover { background: rgba(255, 255, 255, 0.15); }
+.nav-links a.active { background: #fff; color: #3b3f8f; font-weight: 600; }
+.badge {
+  display: inline-block;
+  min-width: 22px;
+  text-align: center;
+  background: #ffb703;
+  color: #1f2430;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  padding: 1px 6px;
+  margin-left: 4px;
+}
+
+.container { max-width: 760px; margin: 32px auto; padding: 0 16px; }
+h2 { margin-bottom: 16px; }
+
+.toast {
+  background: #e7f6ec;
+  border: 1px solid #b6e2c4;
+  color: #1d6b3a;
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.card-list { list-style: none; display: grid; gap: 12px; }
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  padding: 16px 20px;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+.card h3 { font-size: 1.05rem; }
+.card p { color: #667085; font-size: 0.9rem; margin-top: 2px; }
+
+.btn {
+  border: none;
+  border-radius: 8px;
+  padding: 9px 16px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn-primary { background: #3b3f8f; color: #fff; }
+.btn-primary:hover { background: #2e3274; }
+.btn-danger { background: #e5484d; color: #fff; }
+.btn-danger:hover { background: #c93a3f; }
+.btn-disabled { background: #e4e6ee; color: #8a8fa3; cursor: not-allowed; }
+
+.empty {
+  text-align: center;
+  background: #fff;
+  padding: 48px 16px;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+.empty p { margin-bottom: 16px; font-size: 1.1rem; color: #667085; }
+
+@media (max-width: 520px) {
+  .card { flex-direction: column; align-items: flex-start; }
+}
